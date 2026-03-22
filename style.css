@@ -1,0 +1,173 @@
+/*
+
+Theme Name: morionn
+Author: Maciej
+Version: 1.0
+Description: sklep odzieżowy marki morionn
+
+*/
+
+/* ========= Bazowe ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/* ========= layouty ======= */
+
+header {
+  border-bottom: 1px solid #e0e0e0;
+
+}
+
+footer {
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 80px;
+}
+
+/* ========= Komponenty ======= */
+
+.top-bar {
+  background-color: #181818;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+
+nav a.logo {
+  margin-left: 80px;
+}
+
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 50%;          
+  transform: translateX(-50%); 
+}
+
+.usable-icons {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 0%;
+  margin-right: 80px;
+  
+}
+
+footer a {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1{
+  font-size: 48px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.products{
+  position: relative;
+  margin: 30px;
+  margin-left: 50px;
+}
+
+
+.products h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.products-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+
+
+/* ========= Użytkowe ======= */
+
+nav ul li a:hover {
+  border-bottom: 1px solid #1a1a1a;
+}
