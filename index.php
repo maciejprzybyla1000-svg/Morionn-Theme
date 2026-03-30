@@ -28,7 +28,7 @@
     $query = new WP_Query($args);
 
     if($query->have_posts()) : ?>
-      <div class="products-grid">
+      <div class="products-show">
         <?php while ($query->have_posts()) : $query->the_post();
         global $product; ?>
         

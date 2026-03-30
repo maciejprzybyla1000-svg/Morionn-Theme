@@ -24,7 +24,7 @@
     </a>
     
     <ul>
-      <li><a href="#">Produkty</a></li>
+      <li><a href="<?php echo wc_get_page_permalink('shop'); ?>">Produkty</a></li>
       <li><a href="#">Personalizacja</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Kontakt</a></li>

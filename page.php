@@ -1,3 +1,11 @@
+<?php
+if (is_shop()) {
+    include(locate_template('woocommerce/archive-product.php'));
+    exit;
+}
+?>
+
+
 <?php get_header(); ?>
 
 <main class="page-content">
